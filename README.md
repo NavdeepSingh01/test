@@ -29,7 +29,7 @@ npm install
 chmod +x bin/queuectl
 
 # (Optional) Link globally for system-wide access
-sudo npm link
+npm link
 ````
 
 After linking, you can run `queuectl` globally:
