@@ -167,30 +167,7 @@ CREATE TABLE config(
   * **SQLite WAL mode:** Concurrent reads + single-writer guarantee, with `busy_timeout` handling.
   * **Graceful shutdown:** On `SIGINT` / `SIGTERM`, workers stop fetching new jobs but finish the current one before exit.
 
------
-
-## 🧩 Demo Script
-
-Run the full end-to-end demo:
-
-```bash
-npm run demo
-```
-
-Equivalent to:
-
-```bash
-bash scripts/demo.sh
-```
-
-This demo:
-
-1.  Resets DB
-2.  Starts workers
-3.  Enqueues jobs (some succeed, some fail)
-4.  Waits for retries/backoff
-5.  Shows DLQ and retries a job
-6.  Stops workers gracefully
+  Stops workers gracefully
 
 -----
 
